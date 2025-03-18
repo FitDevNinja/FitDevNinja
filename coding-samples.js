@@ -22,4 +22,27 @@ function findDuplicates(arr1,arr2){
 console.log(findDuplicates(arr1,arr2));
 
 
-//
+// Find the non-repeated alphabet
+function findnonRepeat(s){
+  let freq = {};
+  for(let i=0;i<s.length;i++){
+    let char = s[i];
+    if(freq[char] === undefined){
+      freq[char] = 1;
+    } else {
+      freq[char]++
+    }
+  }
+  
+  for(let j=0;j<s.length;j++){
+    if(freq[s[j]] === 1){
+      return j;
+    }
+  }
+  return -1;
+}
+
+
+console.log(findnonRepeat("leetcode"))
+console.log(findnonRepeat("loveleetcode"))
+console.log(findnonRepeat("aabb"))
