@@ -1,3 +1,4 @@
+//Finding duplicates for the given array
 let arr1 = [1,2,3,4,33,10];
 let arr2 = [6,7,8,9,10,33,44];
 
@@ -19,3 +20,6 @@ function findDuplicates(arr1,arr2){
 }
 
 console.log(findDuplicates(arr1,arr2));
+
+
+//
